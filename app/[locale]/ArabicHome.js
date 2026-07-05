@@ -35,7 +35,7 @@ const planSvgs = {
   ),
 };
 
-export default function ArabicHome() {
+export default function DarijaHome() {
   return (
     <>
       <header>
@@ -47,14 +47,14 @@ export default function ArabicHome() {
           <div className="nav-links">
             <a href="#quartiers">الأحياء</a>
             <a href="#biens">العقارات</a>
-            <a href="#tunnel">كيف يعمل الأمر</a>
-            <a href="#contact">اتصل بنا</a>
+            <a href="#tunnel">كيفاش كنخدمو</a>
+            <a href="#contact">تواصل معانا</a>
             <a href="/" style={{ color: "var(--bronze-light)" }}>
               Français
             </a>
           </div>
           <a className="nav-cta" href="#contact">
-            تحدث مع مستشار
+            هدر مع مستشار
           </a>
         </nav>
       </header>
@@ -62,22 +62,22 @@ export default function ArabicHome() {
       <section className="hero">
         <div className="wrap hero-inner">
           <div>
-            <span className="eyebrow mono">الدار البيضاء — عقارات متوسطة وراقية</span>
+            <span className="eyebrow mono">كازابلانكا — عقارات نقية وراقية</span>
             <h1>
-              العنوان لا يُباع.
+              الدار ماكتباعش غير هكاك.
               <br />
-              <em>إنه يُروى.</em>
+              <em>الدار كتعاود قصتها.</em>
             </h1>
             <p className="lead">
-              دوميفي ترافقكم في بيع العقارات المتوسطة والراقية بالدار البيضاء، بتسويق مصمم
-              لخلق انطباع راقٍ منذ أول زيارة.
+              دوميفي كتعاونكم تبيعو العقارات المزيانة والراقية فكازا، بتسويق واعر ومصاوب
+              باش يخلي انطباع زوين من أول شوفة.
             </p>
             <div className="hero-ctas">
               <a className="btn btn-primary" href="#contact">
-                تواصل عبر واتساب
+                تواصل معانا فالواتساب
               </a>
               <a className="btn btn-ghost" href="#biens">
-                شاهد العقارات
+                شوف العقارات
               </a>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function ArabicHome() {
               <circle cx="60" cy="60" r="14" stroke="#A97C3F" strokeWidth="1.2" />
               <rect x="250" y="60" width="90" height="60" stroke="#A97C3F" strokeWidth="1" />
             </svg>
-            <div className="hero-plan-label mono">مخطط توضيحي — 001</div>
+            <div className="hero-plan-label mono">بلان توضيحي — 001</div>
           </div>
         </div>
       </section>
@@ -101,26 +101,26 @@ export default function ArabicHome() {
         <div className="wrap">
           <div className="sec-head reveal">
             <div>
-              <span className="tag">التموقع</span>
-              <h2>ثلاث ركائز للبيع بما يتجاوز السعر بالمتر المربع.</h2>
+              <span className="tag">البوزيسيون</span>
+              <h2>3 ديال الركائز باش نبيعو كتر من الثمن للمتر كاري.</h2>
             </div>
-            <p>السوق العقاري بالدار البيضاء ما زال ضعيف الرقمنة. هذا هو الفارق الذي تسده دوميفي.</p>
+            <p>السوق دالعقار فكازا مزال ناقص فديجيتال. هادا هو النقص لي كتعمرو دوميفي.</p>
           </div>
           <div className="pillar-grid reveal">
             <div className="pillar">
               <span className="num mono">01</span>
-              <h3>تسويق عاطفي</h3>
-              <p>كل عقار يُعرض كمكان للعيش، وليس كورقة تقنية — لتسريع قرار الشراء.</p>
+              <h3>تسويق كيقيس المشاعر</h3>
+              <p>كل عقار كنبينوه كبلاصة للعيش، ماشي غير وراق ومعلومات — باش نزربو قرار الشراء.</p>
             </div>
             <div className="pillar">
               <span className="num mono">02</span>
-              <h3>فيديوهات غامرة</h3>
-              <p>زيارات مصورة ومونتاج احترافي لإثارة الرغبة في الزيارة، تُنشر أولا على تيك توك وريلز.</p>
+              <h3>فيديوهات كتعيشك فالدار</h3>
+              <p>زيارات بالفيديو ومونطاج احترافي باش نزعمو الكليان يجي يشوف، كنلوحوهم ف تيك توك وريلز.</p>
             </div>
             <div className="pillar">
               <span className="num mono">03</span>
-              <h3>هوية بصرية راقية</h3>
-              <p>عرض متناسق في كل الوسائط لترسيخ انطباع راقٍ منذ البداية.</p>
+              <h3>هوية بصرية نقية</h3>
+              <p>خدمة متناسقة فكاع البلايص باش نخليو انطباع زوين وراقي من الدقة اللولة.</p>
             </div>
           </div>
         </div>
@@ -130,10 +130,10 @@ export default function ArabicHome() {
         <div className="wrap">
           <div className="sec-head reveal">
             <div>
-              <span className="tag">الأحياء المستهدفة</span>
-              <h2>سجل أحياء، لا خريطة عامة.</h2>
+              <span className="tag">الأحياء لي كنخدمو فيها</span>
+              <h2>ليستة ديال الأحياء، ماشي خريطة عامة.</h2>
             </div>
-            <p>ستة أحياء يشهد فيها الطلب الراقي أكبر نشاط بالدار البيضاء.</p>
+            <p>6 ديال الأحياء فكازا لي فيها الطلب طالع على العقارات الراقية.</p>
           </div>
           <div className="registry reveal">
             {quartiersAr.map((q) => (
@@ -153,12 +153,12 @@ export default function ArabicHome() {
           <div className="sec-head reveal">
             <div>
               <span className="tag">الاختيارات</span>
-              <h2>عقارات مميزة.</h2>
+              <h2>عقارات واعرة.</h2>
             </div>
-            <p>أمثلة توضيحية — يجب استبدالها بإعلاناتكم الحقيقية وصور فعلية.</p>
+            <p>هادو غير أمثلة — خاص تعوضوهم بالديور ديالكم والصور الحقيقية.</p>
           </div>
           <span className="biens-note mono reveal">
-            محتوى تجريبي — يُستبدل بإعلانات حقيقية قبل النشر
+            محتوى غير ديال التجربة — بدلوه بإعلانات حقيقية قبل ما تلوحوه
           </span>
           <div className="biens-grid reveal">
             {biensAr.map((b) => (
@@ -185,10 +185,10 @@ export default function ArabicHome() {
         <div className="wrap">
           <div className="sec-head reveal">
             <div>
-              <span className="tag">لمن هذا العرض</span>
-              <h2>ثلاث فئات، ثلاثة خطابات مختلفة.</h2>
+              <span className="tag">لمن موجّه هادشي</span>
+              <h2>3 ديال الفئات، 3 ديال الطرق دالهضرة.</h2>
             </div>
-            <p>النبرة والقناة تتغيران حسب من يشاهد الإعلان.</p>
+            <p>الهضرة والطريقة كتبدل على حساب شكون كيشوف الإعلان.</p>
           </div>
           <div className="persona-grid reveal">
             {personasAr.map((p) => (
@@ -207,7 +207,7 @@ export default function ArabicHome() {
           <div className="sec-head reveal">
             <div>
               <span className="tag">مسار البيع</span>
-              <h2>من الفيديو المنتشر إلى التوقيع.</h2>
+              <h2>من الفيديو لي كيدير البوز حتال السنياتور.</h2>
             </div>
           </div>
           <div className="funnel-track reveal">
@@ -227,13 +227,13 @@ export default function ArabicHome() {
           <div className="sec-head reveal">
             <div>
               <span className="tag">الثقة</span>
-              <h2>ماذا يقول عملاؤنا.</h2>
+              <h2>شنو كايقولو الكليان ديالنا.</h2>
             </div>
           </div>
           <div className="temoin-grid reveal">
             {temoignagesAr.map((tItem) => (
               <div className="temoin" key={tItem.who + tItem.role}>
-                <span className="example-badge mono">مثال يُستبدل</span>
+                <span className="example-badge mono">مثال خاصو يتبدل</span>
                 <span className="quote-mark">"</span>
                 <p className="txt">{tItem.txt}</p>
                 <div className="who">{tItem.who}</div>
@@ -247,9 +247,9 @@ export default function ArabicHome() {
       <section className="contact" id="contact">
         <div className="wrap contact-inner">
           <div className="reveal">
-            <span className="eyebrow mono">اتصل بنا</span>
-            <h2>لديك عقار للبيع أو مشروع شراء؟</h2>
-            <p>دقيقتان لإخبارنا بما تبحثون عنه — سنرد عليكم عبر واتساب، من الاثنين إلى السبت.</p>
+            <span className="eyebrow mono">تواصل معانا</span>
+            <h2>عندك دار باغي تبيعها ولا باغي تشري؟</h2>
+            <p>جوج دقايق باش تقول لينا شنو كتقلب — غادي نجاوبوك فالواتساب، من التنين للسبت.</p>
             <LeadForm lang="ar" />
           </div>
           <div className="contact-cards reveal">
@@ -258,12 +258,12 @@ export default function ArabicHome() {
               <span className="val">{contact.whatsapp}</span>
             </div>
             <div className="ccard">
-              <span className="label">البريد الإلكتروني</span>
+              <span className="label">الإيمايل</span>
               <span className="val">{contact.email}</span>
             </div>
             <div className="ccard">
-              <span className="label">المنطقة</span>
-              <span className="val">الدار البيضاء — عين الذياب، المعاريف، الراسين…</span>
+              <span className="label">البلاصة</span>
+              <span className="val">كازا — عين الذياب، المعاريف، الراسين…</span>
             </div>
           </div>
         </div>
@@ -271,8 +271,8 @@ export default function ArabicHome() {
 
       <footer>
         <div className="wrap">
-          <span>© 2026 دوميفي — وكالة تسويق عقاري، الدار البيضاء.</span>
-          <a href="/fr/mentions-legales" style={{ color: "var(--stone-dim)" }}>
+          <span>© 2026 دوميفي — وكالة ديال التسويق العقاري، كازابلانكا.</span>
+          <a href="/mentions-legales" style={{ color: "var(--stone-dim)" }}>
             Mentions légales
           </a>
         </div>
