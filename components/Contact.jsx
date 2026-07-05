@@ -1,4 +1,5 @@
 import { contact } from "@/data/content";
+import LeadForm from "@/components/LeadForm";
 
 export default function Contact() {
   return (
@@ -7,10 +8,11 @@ export default function Contact() {
         <div className="reveal">
           <span className="eyebrow mono">Contact</span>
           <h2>Un bien à vendre ou un projet d&apos;achat ?</h2>
-          <p>Écrivez-nous sur WhatsApp — réponse en moins de 24h, du lundi au samedi.</p>
-          <a className="btn btn-primary" href={contact.whatsappLink}>
-            Discuter sur WhatsApp
-          </a>
+          <p>
+            Deux minutes pour nous dire ce que vous cherchez — on vous répond ensuite sur
+            WhatsApp, du lundi au samedi.
+          </p>
+          <LeadForm />
         </div>
         <div className="contact-cards reveal">
           <div className="ccard">

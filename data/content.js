@@ -38,9 +38,16 @@ export const temoignages = [
   { txt: "Réponse rapide sur WhatsApp et visites bien organisées — exactement ce qu'il nous fallait avec notre emploi du temps.", who: "Nom du client", role: "Acheteurs, Californie" },
 ];
 
+export const budgetRanges = [
+  { value: "700k-1.5M", label: "700k – 1.5M MAD" },
+  { value: "1.5M-2M", label: "1.5M – 2M MAD" },
+  { value: "2M-5M", label: "2M – 5M MAD" },
+  { value: "5M+", label: "5M+ MAD" },
+];
+
 export const contact = {
   whatsapp: "+212 6XX XX XX XX",
-  whatsappLink: "#", // remplacer par https://wa.me/2126XXXXXXXX
+  whatsappNumber: "2126XXXXXXXX", // format international sans + ni espaces, requis pour wa.me
   email: "contact@domify.ma",
   zone: "Casablanca — Ain Diab, Maarif, Racine…",
 };
