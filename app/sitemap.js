@@ -15,7 +15,7 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${siteUrl}/mentions-legales`,
+      url: `${siteUrl}/fr/mentions-legales`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.3,
