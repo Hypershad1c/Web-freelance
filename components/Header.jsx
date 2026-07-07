@@ -1,4 +1,12 @@
 import Image from "next/image";
+import MobileMenu from "@/components/MobileMenu";
+
+const links = [
+  { href: "#quartiers", label: "Quartiers" },
+  { href: "#biens", label: "Biens" },
+  { href: "#tunnel", label: "Comment ça marche" },
+  { href: "#contact", label: "Contact" },
+];
 
 export default function Header() {
   return (
@@ -22,6 +30,13 @@ export default function Header() {
         <a className="nav-cta" href="#contact">
           Parler à un conseiller
         </a>
+        <MobileMenu
+          links={links}
+          langHref="/ar"
+          langLabel="العربية"
+          ctaHref="#contact"
+          ctaLabel="Parler à un conseiller"
+        />
       </nav>
     </header>
   );

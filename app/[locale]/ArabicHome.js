@@ -1,6 +1,8 @@
 import Image from "next/image";
 import LeadForm from "@/components/LeadForm";
+import MobileMenu from "@/components/MobileMenu";
 import ScrollReveal from "@/components/ScrollReveal";
+import AmbianceGallery from "@/components/AmbianceGallery";
 import {
   quartiersAr,
   biensAr,
@@ -35,7 +37,7 @@ const planSvgs = {
   ),
 };
 
-export default function DarijaHome() {
+export default function ArabicHome() {
   return (
     <>
       <header>
@@ -47,37 +49,49 @@ export default function DarijaHome() {
           <div className="nav-links">
             <a href="#quartiers">الأحياء</a>
             <a href="#biens">العقارات</a>
-            <a href="#tunnel">كيفاش كنخدمو</a>
-            <a href="#contact">تواصل معانا</a>
+            <a href="#tunnel">كيف يعمل الأمر</a>
+            <a href="#contact">اتصل بنا</a>
             <a href="/" style={{ color: "var(--bronze-light)" }}>
               Français
             </a>
           </div>
           <a className="nav-cta" href="#contact">
-            هدر مع مستشار
+            تحدث مع مستشار
           </a>
+          <MobileMenu
+            links={[
+              { href: "#quartiers", label: "الأحياء" },
+              { href: "#biens", label: "العقارات" },
+              { href: "#tunnel", label: "كيف يعمل الأمر" },
+              { href: "#contact", label: "اتصل بنا" },
+            ]}
+            langHref="/"
+            langLabel="Français"
+            ctaHref="#contact"
+            ctaLabel="تحدث مع مستشار"
+          />
         </nav>
       </header>
 
       <section className="hero">
         <div className="wrap hero-inner">
           <div>
-            <span className="eyebrow mono">كازابلانكا — عقارات نقية وراقية</span>
+            <span className="eyebrow mono">الدار البيضاء — عقارات متوسطة وراقية</span>
             <h1>
-              الدار ماكتباعش غير هكاك.
+              العنوان لا يُباع.
               <br />
-              <em>الدار كتعاود قصتها.</em>
+              <em>إنه يُروى.</em>
             </h1>
             <p className="lead">
-              دوميفي كتعاونكم تبيعو العقارات المزيانة والراقية فكازا، بتسويق واعر ومصاوب
-              باش يخلي انطباع زوين من أول شوفة.
+              دوميفي ترافقكم في بيع العقارات المتوسطة والراقية بالدار البيضاء، بتسويق مصمم
+              لخلق انطباع راقٍ منذ أول زيارة.
             </p>
             <div className="hero-ctas">
               <a className="btn btn-primary" href="#contact">
-                تواصل معانا فالواتساب
+                تواصل عبر واتساب
               </a>
               <a className="btn btn-ghost" href="#biens">
-                شوف العقارات
+                شاهد العقارات
               </a>
             </div>
           </div>
@@ -92,7 +106,7 @@ export default function DarijaHome() {
               <circle cx="60" cy="60" r="14" stroke="#A97C3F" strokeWidth="1.2" />
               <rect x="250" y="60" width="90" height="60" stroke="#A97C3F" strokeWidth="1" />
             </svg>
-            <div className="hero-plan-label mono">بلان توضيحي — 001</div>
+            <div className="hero-plan-label mono">مخطط توضيحي — 001</div>
           </div>
         </div>
       </section>
@@ -101,26 +115,26 @@ export default function DarijaHome() {
         <div className="wrap">
           <div className="sec-head reveal">
             <div>
-              <span className="tag">البوزيسيون</span>
-              <h2>3 ديال الركائز باش نبيعو كتر من الثمن للمتر كاري.</h2>
+              <span className="tag">التموقع</span>
+              <h2>ثلاث ركائز للبيع بما يتجاوز السعر بالمتر المربع.</h2>
             </div>
-            <p>السوق دالعقار فكازا مزال ناقص فديجيتال. هادا هو النقص لي كتعمرو دوميفي.</p>
+            <p>السوق العقاري بالدار البيضاء ما زال ضعيف الرقمنة. هذا هو الفارق الذي تسده دوميفي.</p>
           </div>
           <div className="pillar-grid reveal">
             <div className="pillar">
               <span className="num mono">01</span>
-              <h3>تسويق كيقيس المشاعر</h3>
-              <p>كل عقار كنبينوه كبلاصة للعيش، ماشي غير وراق ومعلومات — باش نزربو قرار الشراء.</p>
+              <h3>تسويق عاطفي</h3>
+              <p>كل عقار يُعرض كمكان للعيش، وليس كورقة تقنية — لتسريع قرار الشراء.</p>
             </div>
             <div className="pillar">
               <span className="num mono">02</span>
-              <h3>فيديوهات كتعيشك فالدار</h3>
-              <p>زيارات بالفيديو ومونطاج احترافي باش نزعمو الكليان يجي يشوف، كنلوحوهم ف تيك توك وريلز.</p>
+              <h3>فيديوهات غامرة</h3>
+              <p>زيارات مصورة ومونتاج احترافي لإثارة الرغبة في الزيارة، تُنشر أولا على تيك توك وريلز.</p>
             </div>
             <div className="pillar">
               <span className="num mono">03</span>
-              <h3>هوية بصرية نقية</h3>
-              <p>خدمة متناسقة فكاع البلايص باش نخليو انطباع زوين وراقي من الدقة اللولة.</p>
+              <h3>هوية بصرية راقية</h3>
+              <p>عرض متناسق في كل الوسائط لترسيخ انطباع راقٍ منذ البداية.</p>
             </div>
           </div>
         </div>
@@ -130,10 +144,10 @@ export default function DarijaHome() {
         <div className="wrap">
           <div className="sec-head reveal">
             <div>
-              <span className="tag">الأحياء لي كنخدمو فيها</span>
-              <h2>ليستة ديال الأحياء، ماشي خريطة عامة.</h2>
+              <span className="tag">الأحياء المستهدفة</span>
+              <h2>سجل أحياء، لا خريطة عامة.</h2>
             </div>
-            <p>6 ديال الأحياء فكازا لي فيها الطلب طالع على العقارات الراقية.</p>
+            <p>ستة أحياء يشهد فيها الطلب الراقي أكبر نشاط بالدار البيضاء.</p>
           </div>
           <div className="registry reveal">
             {quartiersAr.map((q) => (
@@ -148,17 +162,19 @@ export default function DarijaHome() {
         </div>
       </section>
 
+      <AmbianceGallery lang="ar" />
+
       <section className="biens" id="biens">
         <div className="wrap">
           <div className="sec-head reveal">
             <div>
               <span className="tag">الاختيارات</span>
-              <h2>عقارات واعرة.</h2>
+              <h2>عقارات مميزة.</h2>
             </div>
-            <p>هادو غير أمثلة — خاص تعوضوهم بالديور ديالكم والصور الحقيقية.</p>
+            <p>أمثلة توضيحية — يجب استبدالها بإعلاناتكم الحقيقية وصور فعلية.</p>
           </div>
           <span className="biens-note mono reveal">
-            محتوى غير ديال التجربة — بدلوه بإعلانات حقيقية قبل ما تلوحوه
+            محتوى تجريبي — يُستبدل بإعلانات حقيقية قبل النشر
           </span>
           <div className="biens-grid reveal">
             {biensAr.map((b) => (
@@ -185,10 +201,10 @@ export default function DarijaHome() {
         <div className="wrap">
           <div className="sec-head reveal">
             <div>
-              <span className="tag">لمن موجّه هادشي</span>
-              <h2>3 ديال الفئات، 3 ديال الطرق دالهضرة.</h2>
+              <span className="tag">لمن هذا العرض</span>
+              <h2>ثلاث فئات، ثلاثة خطابات مختلفة.</h2>
             </div>
-            <p>الهضرة والطريقة كتبدل على حساب شكون كيشوف الإعلان.</p>
+            <p>النبرة والقناة تتغيران حسب من يشاهد الإعلان.</p>
           </div>
           <div className="persona-grid reveal">
             {personasAr.map((p) => (
@@ -207,7 +223,7 @@ export default function DarijaHome() {
           <div className="sec-head reveal">
             <div>
               <span className="tag">مسار البيع</span>
-              <h2>من الفيديو لي كيدير البوز حتال السنياتور.</h2>
+              <h2>من الفيديو المنتشر إلى التوقيع.</h2>
             </div>
           </div>
           <div className="funnel-track reveal">
@@ -227,13 +243,13 @@ export default function DarijaHome() {
           <div className="sec-head reveal">
             <div>
               <span className="tag">الثقة</span>
-              <h2>شنو كايقولو الكليان ديالنا.</h2>
+              <h2>ماذا يقول عملاؤنا.</h2>
             </div>
           </div>
           <div className="temoin-grid reveal">
             {temoignagesAr.map((tItem) => (
               <div className="temoin" key={tItem.who + tItem.role}>
-                <span className="example-badge mono">مثال خاصو يتبدل</span>
+                <span className="example-badge mono">مثال يُستبدل</span>
                 <span className="quote-mark">"</span>
                 <p className="txt">{tItem.txt}</p>
                 <div className="who">{tItem.who}</div>
@@ -247,9 +263,9 @@ export default function DarijaHome() {
       <section className="contact" id="contact">
         <div className="wrap contact-inner">
           <div className="reveal">
-            <span className="eyebrow mono">تواصل معانا</span>
-            <h2>عندك دار باغي تبيعها ولا باغي تشري؟</h2>
-            <p>جوج دقايق باش تقول لينا شنو كتقلب — غادي نجاوبوك فالواتساب، من التنين للسبت.</p>
+            <span className="eyebrow mono">اتصل بنا</span>
+            <h2>لديك عقار للبيع أو مشروع شراء؟</h2>
+            <p>دقيقتان لإخبارنا بما تبحثون عنه — سنرد عليكم عبر واتساب، من الاثنين إلى السبت.</p>
             <LeadForm lang="ar" />
           </div>
           <div className="contact-cards reveal">
@@ -258,12 +274,12 @@ export default function DarijaHome() {
               <span className="val">{contact.whatsapp}</span>
             </div>
             <div className="ccard">
-              <span className="label">الإيمايل</span>
+              <span className="label">البريد الإلكتروني</span>
               <span className="val">{contact.email}</span>
             </div>
             <div className="ccard">
-              <span className="label">البلاصة</span>
-              <span className="val">كازا — عين الذياب، المعاريف، الراسين…</span>
+              <span className="label">المنطقة</span>
+              <span className="val">الدار البيضاء — عين الذياب، المعاريف، الراسين…</span>
             </div>
           </div>
         </div>
@@ -271,8 +287,8 @@ export default function DarijaHome() {
 
       <footer>
         <div className="wrap">
-          <span>© 2026 دوميفي — وكالة ديال التسويق العقاري، كازابلانكا.</span>
-          <a href="/mentions-legales" style={{ color: "var(--stone-dim)" }}>
+          <span>© 2026 دوميفي — وكالة تسويق عقاري، الدار البيضاء.</span>
+          <a href="/fr/mentions-legales" style={{ color: "var(--stone-dim)" }}>
             Mentions légales
           </a>
         </div>

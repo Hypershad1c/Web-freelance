@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Pillars from "@/components/Pillars";
 import Quartiers from "@/components/Quartiers";
+import AmbianceGallery from "@/components/AmbianceGallery";
 import Biens from "@/components/Biens";
 import Personas from "@/components/Personas";
 import Funnel from "@/components/Funnel";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Pillars />
       <Quartiers />
+      <AmbianceGallery lang="fr" />
       <Biens />
       <Personas />
       <Funnel />
