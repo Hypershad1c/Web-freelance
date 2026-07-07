@@ -10,7 +10,7 @@
   --line:rgba(232,225,211,0.14);
 }
 *{box-sizing:border-box; margin:0; padding:0;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; overflow-x:hidden;}
 body{
   background:var(--charcoal);
   color:var(--cream);
@@ -257,7 +257,7 @@ footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12
 .mobile-menu-panel{
   position:fixed; top:73px; left:0; right:0; bottom:0;
   background:rgba(20,23,26,0.98); backdrop-filter:blur(10px);
-  display:flex; flex-direction:column; gap:4px; padding:24px 32px;
+  display:flex; flex-direction:column; gap:4px; padding: 244px 32px;
   z-index:1000; overflow-y:auto;
 }
 .mobile-menu-panel a{
@@ -269,6 +269,7 @@ footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12
 }
 
 @media (max-width:900px){
+  .hero{padding:100px 0 60px;}
   .hero-inner{grid-template-columns:1fr;}
   .hero-plan{max-width:420px;}
   .pillar-grid, .biens-grid, .persona-grid, .temoin-grid{grid-template-columns:1fr;}
