@@ -1,6 +1,6 @@
-node_modules
-.next
-out
 .vercel
-.env*.local
-npm-debug.log*
+.env*
+prisma/seed.ts
+node_modules
+.vercel
+.next
